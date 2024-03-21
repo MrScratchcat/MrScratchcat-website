@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrScratchcat's Website</title>
+    <link rel="icon" id="dynamicFavicon" href="scratchcat-logo-light.svg" type="image/svg+xml">
+
+    <style>
+        @font-face {
+            font-family: 'College';
+            src: url('College.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .blue-bar {
+            height: 80px;
+            background-color: #1d58a4;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .blue-bar img {
+            height: 60px;
+        }
+
+        .blue-bar a img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .blue-bar h1 {
+            font-size: 1.5em;
+            margin: 0;
+            color: white;
+            font-family: 'College', Arial, sans-serif;
+        }
+
+        .blue-bar a {
+            margin-right: 40px; 
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .blue-bar a:hover img {
+            transform: scale(1.1);
+        }
+        .project-list {
+            margin-top:100px;
+        }
+        .project {
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 0 20px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .project{
+            display: inline-block;
+            max-width: 290px;
+            vertical-align: top;
+        }
+
+        .project h2, .project p {
+            margin: 10px 0;
+        }
+
+        .project a:link, .project a:visited {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+            max-width:300px;
+        }
+
+        .project a:hover {
+            color: white;
+        }
+
+        .project-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1d58a4;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .project-button:hover {
+            color:white;
+        }
+        .footer{
+            text-align: center;
+            margin-top: 100px;
+            font-weight:600;
+            font-size:14px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blue-bar">
+        <a href="#"><img src="scratchcat-logo-wit.svg" alt="scratchcat logo"></a>
+        <h1>Mijn Projecten</h1>
+        <a href="https://github.com/MrScratchcat" target="_blank"><img src="github-wit.png" alt="GitHub"></a>
+    </div>
+
+    <div class="project-list">
+        <div class="project-list">
+            <div class="project">
+                <div>
+                    <h2>Auto-Minecraft-Server</h2>
+                    <p>This bash script will help you make your Minecraft server fast and easy.</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/auto-minecraft-server" class="project-button" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <div>
+                    <h2>ChatGPT-via-Voice</h2>
+                    <p>This bash script makes it so you can use ChatGPT with your own voice!</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/chatgpt-via-voice" class="project-button" target="_blank">View Project</a>
+    </div>
+            
+            <div class="project">
+                <div>
+                    <h2>MrScratch-phone</h2>
+                    <p>MrScratch phone is a beta project for the Raspberry Pi 4 to turn it into a working phone.</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/MrScratch-phone" class="project-button" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <div>
+                    <h2>GPU-based Password Generator</h2>
+                    <p>Is a CUDA-based password generator to create a lot of passwords really quick.</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/gpu-based-password-generator" class="project-button" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <div>
+                    <h2>WiFi Killer</h2>
+                    <p>This script is made in Bash using mdk4 to make WiFi deauthing easy.</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/wifi-killer" class="project-button" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <div>
+                    <h2>Custom Linux Commands</h2>
+                    <p>This is a project to make easier Linux commands for you to use.</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/custom-linux-commands" class="project-button" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <div>
+                    <h2>Onion Website Creator</h2>
+                    <p>This is a Bash script that makes an Onion website in seconds for you.</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/onionwebsitecreator" class="project-button" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <div>
+                    <h2>SystemGPT</h2>
+                    <p>SystemGPT is a project to make using Linux on any OS super easy with the help of ChatGPT. But it is still in beta so watch out or it could break your system and delete your files</p>
+                </div>
+                <a href="https://github.com/MrScratchcat/systemgpt" class="project-button" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div>
+                <h2>My-docker-container</h2>
+                <p>this is my docker container based of kali but with extra tools to use everywhere</p>
+            </div>
+            <a href="https://github.com/MrScratchcat/my-docker-container" class="project-button" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by Mr. Scratchcat</p>
+    </div>
+
+    <script>
+        function updateFavicon() {
+            var favicon = document.getElementById('dynamicFavicon');
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                favicon.href = 'scratchcat-logo-wit.svg';
+            } else {
+                favicon.href = 'scratchcat-logo-zwart.svg';
+            }
+        }
+        updateFavicon();
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => updateFavicon());
+    </script>
+</body>
+
+</html>
